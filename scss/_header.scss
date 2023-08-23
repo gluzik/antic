@@ -1,0 +1,128 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background: #f3eee8;
+    color: #a06056;
+}
+
+.header {
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 70px;
+    }
+
+    &__bottom {
+        width: 350px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        padding-top: 55px;
+        margin-bottom: 110px;
+    }
+
+    &__logo {
+        margin-right: 20px;
+        margin-top: -20px;
+    }
+
+    &__nav {
+        display: flex;
+
+        &-link {
+            display: block;
+            padding: 10px;
+
+            text-decoration: none;
+            font-family: Varta;
+            font-size: 18px;
+            font-weight: 400;
+            color: #706458;
+
+            &:hover {
+                color: #bb5f51;
+            }
+        }
+    }
+
+    &__label {
+        font-family: Varta;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 1px;
+
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-family: Merriweather;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 70px;
+
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        margin-bottom: 50px;
+        font-family: Varta;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 31px;
+        color: #706458E5;
+    }
+
+    &__btn {
+        display: inline-block;
+
+        border-radius: 100px;
+        border: 2px solid #a06056;
+
+        margin-bottom: 220px;
+        padding: 10px;
+
+        transition: 0.3s;
+        fill: #a06056;
+
+        &:hover {
+            background: #bb5f51;
+
+            fill: white;
+        }
+
+    }
+
+    &__right {
+        width: 50%;
+        background: url(../img/header-bcg.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        position: relative;
+    }
+
+    &__chat {
+        position: absolute;
+        right: 60px;
+        top: 60px;
+
+        padding: 10px;
+
+        border-radius: 100px;
+        border: 2px solid #fff;
+        fill: #fff;
+        transition: 0.3s;
+
+        &:hover {
+            fill: #bb5f51;
+            border-color: #bb5f51;
+        }
+    }
+}
